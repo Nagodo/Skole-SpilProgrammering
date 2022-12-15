@@ -282,7 +282,7 @@ while running:
     if (move[0] != 0 or move[1] != 0):
         game.Player.moving = True
         #Check if the player is colliding with a wall
-        #move = game.CheckWallCollision(move)
+        move = game.CheckWallCollision(move)
         game.MoveObjects(move)
     else:
         game.Player.moving = False
